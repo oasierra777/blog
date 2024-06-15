@@ -7,8 +7,8 @@ from django.urls import path
 from django.urls import re_path
 
 urlpatterns = [
-    #path('api/blog/', include('apps.blog.urls')),
-    #path('api/category/', include('apps.category.urls')),
+    path('api/blog/', include('apps.blog.urls')),
+    path('api/category/', include('apps.category.urls')),
     
     path('admin/', admin.site.urls),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
